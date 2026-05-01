@@ -1,0 +1,8 @@
+sqoop import \
+--connect jdbc:mysql://localhost:3306/autosysdb \
+--username autosys_user \
+--password autosys_password \
+--table autosys_job_history \
+--target-dir /banking/autosys/raw/job_history \
+--fields-terminated-by ',' \
+--num-mappers 1
